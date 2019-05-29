@@ -15,12 +15,12 @@ npm install --save react-async-search-dropdown
 ```tsx
 import * as React from 'react'
 
-import MyComponent from 'react-async-search-dropdown'
+import AsyncSearchDropdown from 'react-async-search-dropdown'
 
-class Example extends React.Component {
+class AsyncSearchDropdown extends React.Component {
   render () {
     return (
-      <MyComponent />
+      <AsyncSearchDropdown />
     )
   }
 }
