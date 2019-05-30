@@ -68,6 +68,7 @@ class AsyncSearchDropdown extends React.Component {
 ```
 
 ## Props
+```tsx
   leftIcon - A boolean for if you want a search icon 
   canClearAll - An X button will show that clears all selectedItems onClick
   defaultListStyling - A boolean for if you want to use predefined styling for the popover list, the renderItem prop will then be invalid
@@ -75,7 +76,7 @@ class AsyncSearchDropdown extends React.Component {
   placeholder - Placeholder text for the input. The text will be replaced by the label of the items you select
   getItems - Based on the input on the dropdown it returns a list with items that renders in the dropdown
   renderItem - A render props for if you want to style the popover list yourself
-
+```
 
 
 ## License
