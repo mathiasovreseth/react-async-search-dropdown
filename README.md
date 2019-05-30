@@ -30,23 +30,8 @@ class AsyncSearchDropdown extends React.Component {
                 placeholder={'Search here...'}
                 getItems={(input) => {
                   return new Promise(async (resolve, reject) => {
-                  const items = [];
                   try {
-                    items.push({
-                      id: '1',
-                      label: 'Obj1',
-                    },
-                    {
-                      id: '2', label: 'Obj2'
-                    },
-                    {
-                      id: '3', label: 'Obj3'
-                    },
-                    {
-                      id: '4', label: 'Obj4'
-                    });
-      
-                    resolve(items);
+                   resolve(items);
                   }
                   catch (e) {
                   console.error('Fail', e);
@@ -56,7 +41,7 @@ class AsyncSearchDropdown extends React.Component {
                 }}
                 renderItem={(value, i, isActive) => (
                   <div
-                    key={'dasd' + value.label + i}
+                    key={value.id + i}
                     style={{}}
                   >
                     {value.label}
