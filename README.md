@@ -21,13 +21,9 @@ class AsyncSearchDropdown extends React.Component {
   render () {
     return (
        <AsyncSearchDropdown
-                // if you want a search icon
                 leftIcon={true}
-                // If you want to use predefined styling for the popover list
                 defaultListStyling={false}
-                // if you want a X icon that clears all the selected items
                 canClearAll={true}
-      
                 onChange={(values)=> {
                 }}
                 placeholder={'Search here...'}
@@ -57,7 +53,6 @@ class AsyncSearchDropdown extends React.Component {
                 }
                 });
                 }}
-                // Optional renderProp if you want to style the popover list youself
                 renderItem={(value, i, isActive) => (
                   <div
                     key={'dasd' + value.label + i}
@@ -71,6 +66,17 @@ class AsyncSearchDropdown extends React.Component {
   }
 }
 ```
+
+## Props
+  leftIcon - A boolean for if you want a search icon 
+  canClearAll - An X button will show that clears all selectedItems onClick
+  defaultListStyling - A boolean for if you want to use predefined styling for the popover list, the renderItem prop will then be invalid
+  onChange - The onChange event occurs when there have been changes to the selectedItems
+  placeholder - Placeholder text for the input. The text will be replaced by the label of the items you select
+  getItems - Based on the input on the dropdown it returns a list with items that renders in the dropdown
+  renderItem - A render props for if you want to style the popover list yourself
+
+
 
 ## License
 
