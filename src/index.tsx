@@ -58,7 +58,6 @@ const Input = styled.input`
 `;
 const RemoveButton = styled.div`
   display: flex;
-  width: 10%;
   justify-content: center;
   align-items: center;
   margin-right: 4px;
