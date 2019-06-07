@@ -46,7 +46,7 @@ const Input = styled.input`
   font-size: 14px;
   background-color: #fff;
   border-radius: 3px;
-  width: 85%;
+  width: 75%;
   margin-left: 0.5em;
   -webkit-appearance: none;
   -webkit-moz-appearance: none;
@@ -58,7 +58,7 @@ const Input = styled.input`
 `;
 const RemoveButton = styled.div`
   display: flex;
-  width: 15%;
+  width: 10%;
   justify-content: center;
   align-items: center;
   margin-right: 4px;
@@ -237,7 +237,7 @@ export const AsyncSearchDropdown: React.FunctionComponent<
       setSelectedItems(copy);
 
       // Changes the placeholder text to the items that are chosen
-      if (selectedItems.length > 1) {
+      if (copy.length > 1) {
         setLastSelectedItem(c => c + '...' + item.label);
       } else {
         setLastSelectedItem(item.label);
