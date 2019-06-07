@@ -39,7 +39,7 @@ class AsyncSearchDropdown extends React.Component {
                 }
                 });
                 }}
-                renderItem={(value, i, isActive) => (
+                renderItem={(value, i, isActive, isSelected, img) => (
                   <div
                     key={value.id + i}
                     style={{}}
